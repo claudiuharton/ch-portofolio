@@ -14,6 +14,7 @@ import {
   Moon,
 } from "lucide-react";
 import { useTheme } from "./ThemeContext";
+import profilePicture from "./assets/picture.png";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -800,6 +801,15 @@ const Portfolio = () => {
       >
         <div className="max-w-4xl mx-auto w-full">
           <div className="text-center">
+            {/* Profile Picture */}
+            <div className="mb-8 flex justify-center">
+              <img
+                src={profilePicture}
+                alt="Claudiu Harton - Senior React Fullstack Engineer"
+                className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-xl"
+              />
+            </div>
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Hi, I'm Claudiu
             </h1>
